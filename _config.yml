@@ -42,7 +42,7 @@ include:
 # Author info
 author:
   name: "Pamela Vinueza"
-  avatar: "/images/espoch.jpg"  # Add a profile photo to /images/
+  avatar: "/images/espoch.jpeg"  # Add a profile photo to /images/
   bio: "Researcher in [field], open data advocate"
   location: "Institution, Country"
   links:
