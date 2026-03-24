@@ -1,0 +1,20 @@
+title: Research Data Hub
+description: Open datasets for scientific research
+theme: minima
+
+author:
+  name: PV
+  email: pamela.vinueza@espoch.edu.ec
+
+# Navigation links
+header_pages:
+  - index.md
+  - datasets.md
+  - guide.md
+  - about.md
+
+# Collections for datasets
+collections:
+  datasets:
+    output: true
+    permalink: /datasets/:name/
