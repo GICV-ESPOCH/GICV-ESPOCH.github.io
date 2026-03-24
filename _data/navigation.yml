@@ -9,6 +9,9 @@ main:
   - title: "Publications"
     url: /publications/
     description: "Academic papers and reports"
+  - title: "Datasets"
+    url: /datasets/
+    description: "Generated data"
   - title: "Contact"
     url: /contact/
     description: "Get in touch"
