@@ -1,0 +1,38 @@
+- id: clinical-trials-2024
+  title: Clinical Trials Dataset 2024
+  description: Patient outcomes from Phase II trials
+  size: 450 MB
+  format: CSV
+  records: 12500
+  location: external
+  provider: GCS
+  url: https://storage.googleapis.com/bucket-name/clinical-trials-2024.csv
+  direct_download: false
+  date_added: 2024-03-15
+  version: 1.0.0
+  
+- id: sample-test-data
+  title: Sample Test Dataset
+  description: Small test file for pipeline validation
+  size: 2 KB
+  format: CSV
+  records: 100
+  location: github
+  url: /assets/data/sample.csv
+  direct_download: true
+  date_added: 2024-03-20
+  version: 1.0.0
+  
+- id: imaging-cohort-a
+  title: Medical Imaging Cohort A
+  description: De-identified radiology images
+  size: 12 GB
+  format: DICOM
+  records: 500
+  location: external
+  provider: Institutional Cloud
+  url: https://institution.edu/data-portal/imaging-cohort-a
+  direct_download: false
+  access_instructions: Request access via institutional portal
+  date_added: 2024-03-10
+  version: 2.1.0
