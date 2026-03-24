@@ -1,14 +1,10 @@
 title: "Research Data Hub"
-name: "Pamela Vinueza"
-description: "Open datasets for scientific research"
-url: "https://gicv-espoch.github.io"
+name: "Her Name"
+email: "her.email@institution.edu"
+description: "Open datasets for research"
+url: "https://username.github.io"
 baseurl: ""
 
-# SEO
-lang: "en-US"
-locale: "en-US"
-
-# Theme
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 minimal_mistakes_skin: "default"
 
@@ -19,78 +15,31 @@ plugins:
   - jekyll-seo-tag
   - jekyll-include-cache
 
-# Site settings
-# Navigation links (appears in top menu)
-header_pages:
-  - _pages/about.md
-  - _pages/datasets.md
-  - _pages/guide.md
-  - _pages/publications.md
-  
 markdown: kramdown
-paginate: 5
-paginate_path: "/page:num/"
 
-# Collections - THIS IS CRITICAL
-collections:
-  datasets:
-    output: true
-    permalink: /:collection/:path/
+# CRITICAL: This creates the navigation menu
+header_pages:
+  - about.md
+  - datasets.md
+  - guide.md
+  - publications.md
 
-# Include _pages folder
 include:
   - _pages
 
-# Author info - THIS CONTROLS SIDEBAR
 author:
   name: "Her Full Name"
-  avatar: "/assets/images/espoch.jpeg"  # MUST be in assets/images/
-  bio: "Researcher in [field]. Open data advocate."
-  location: "Institution, Country"
+  bio: "Researcher"
+  location: "Institution"
   links:
     - label: "Email"
       icon: "fas fa-envelope"
       url: "mailto:her.email@institution.edu"
-    - label: "GitHub"
-      icon: "fab fa-github"
-      url: "https://github.com/username"
-    - label: "ORCID"
-      icon: "fab fa-orcid"
-      url: "https://orcid.org/0000-0000-0000-0000"
 
-# Defaults - THIS CONTROLS LAYOUTS
 defaults:
-  # Posts and pages show author sidebar
   - scope:
       path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: false
-      comments: false
-      share: false
-      related: false
-  # Pages
-  - scope:
-      path: "_pages"
       type: pages
     values:
       layout: single
       author_profile: true
-  # Datasets collection
-  - scope:
-      path: ""
-      type: datasets
-    values:
-      layout: single
-      author_profile: true
-
-exclude:
-  - .sass-cache/
-  - .jekyll-cache/
-  - gemfiles/
-  - Gemfile
-  - Gemfile.lock
-  - node_modules/
-  - vendor/
