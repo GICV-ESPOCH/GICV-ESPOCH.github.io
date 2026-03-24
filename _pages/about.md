@@ -30,8 +30,8 @@ related: false
   </div>
   
   <div style="flex: 0 0 300px;">
-    <img src="/images/chancho.jpeg" alt="Field work in Riobamba" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-    <p style="font-size: 0.9em; color: #666; text-align: center; margin-top: 0.5rem; font-style: italic;">Nice logo</p>
+    <img src="/images/chancho.jpeg" alt="Field work in Riobamba" style="width: 75%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    <p style="font-size: 0.9em; color: #666; text-align: center; margin-top: 0.5rem; font-style: italic;">Field work in Riobamba</p>
   </div>
 </div>
 
