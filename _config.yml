@@ -20,6 +20,13 @@ plugins:
   - jekyll-include-cache
 
 # Site settings
+# Navigation links (appears in top menu)
+header_pages:
+  - _pages/about.md
+  - _pages/datasets.md
+  - _pages/guide.md
+  - _pages/publications.md
+  
 markdown: kramdown
 paginate: 5
 paginate_path: "/page:num/"
