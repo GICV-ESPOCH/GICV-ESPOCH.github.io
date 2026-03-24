@@ -5,34 +5,12 @@ title: "Something about me"
 classes: wide
 ---
 
-<h2>Research Data Hub</h2>
+<h2>Project Name: Fnacy project name</h2>
 
-<p>Open datasets for [field of research]. This repository provides [brief description].</p>
+<p>We do pretty cool stuff.</p>
 
-<h3>Quick Links</h3>
-<ul>
-  <li><a href="/about/">About the Project</a></li>
-  <li><a href="/datasets/">Browse Datasets</a></li>
-  <li><a href="/guide/">Download Guide</a></li>
-  <li><a href="/publications/">Publications</a></li>
-</ul>
 
-<h3>Featured Datasets</h3>
+<h2>About us</h2>
 
-{% for ds in site.data.datasets limit:3 %}
-  <div style="margin-bottom: 2em; padding: 1.5em; border: 1px solid #ddd; border-radius: 4px;">
-    <h4>{{ ds.title }}</h4>
-    <p>{{ ds.description }}</p>
-    <p>
-      <strong>{{ ds.size }}</strong> • {{ ds.format }} • {{ ds.records }} records<br>
-      {% if ds.direct_download %}
-        <a href="{{ ds.url }}" class="btn btn--primary">Download</a>
-      {% else %}
-        <a href="{{ ds.url }}" class="btn btn--primary" target="_blank">Access on {{ ds.provider }}</a>
-      {% endif %}
-      <a href="/datasets/{{ ds.id }}" class="btn btn--inverse">Details</a>
-    </p>
-  </div>
-{% endfor %}
+<p>We are pretty cool people.</p>
 
-<p><a href="/datasets/" class="btn btn--info">Browse All Datasets →</a></p>
