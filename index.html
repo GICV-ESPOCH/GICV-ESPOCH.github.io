@@ -1,0 +1,28 @@
+---
+layout: home
+author_profile: true
+---
+
+<h2>Research Data Hub</h2>
+
+<p>Open datasets for [field of research].</p>
+
+<h3>Featured Datasets</h3>
+
+{% for ds in site.data.datasets limit:3 %}
+  <div style="margin-bottom: 2em; padding: 1em; border: 1px solid #ddd;">
+    <h4>{{ ds.title }}</h4>
+    <p>{{ ds.description }}</p>
+    <p>
+      <strong>{{ ds.size }}</strong> • {{ ds.format }} • {{ ds.records }} records<br>
+      {% if ds.direct_download %}
+        <a href="{{ ds.url }}" class="btn btn--primary">Download</a>
+      {% else %}
+        <a href="{{ ds.url }}" class="btn btn--primary" target="_blank">Access on {{ ds.provider }}</a>
+      {% endif %}
+      <a href="/datasets/{{ ds.id }}" class="btn btn--inverse">Details</a>
+    </p>
+  </div>
+{% endfor %}
+
+<p><a href="/datasets/" class="btn btn--info">Browse All Datasets →</a></p>
