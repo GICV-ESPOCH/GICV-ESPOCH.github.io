@@ -1,0 +1,25 @@
+main:
+  - title: "Home"
+    url: /
+  - title: "About"
+    url: /about/
+  #- title: "Research"
+  #  url: /research/
+  #  description: "Current projects and methodologies"
+  - title: "Publications"
+    url: /publications/
+    description: "Academic papers and reports"
+  - title: "Contact"
+    url: /contact/
+    description: "Get in touch"
+
+# Optional: Add a secondary navigation for footer or sidebar
+footer:
+  - title: "Quick Links"
+    children:
+      - title: "ResearchGate"
+        url: "https://www.researchgate.net/profile/Pamela-Vinueza"
+      - title: "Email"
+        url: "mailto:pvinuezavet@gmail.com"
+      - title: "CV/Resume"
+        url: "/assets/cv/marlon-calispa-cv.pdf"  # Add when you have a CV file
