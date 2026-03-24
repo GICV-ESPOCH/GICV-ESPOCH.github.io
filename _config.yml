@@ -1,6 +1,6 @@
 title: "Research Data Hub"
 name: "Her Name"
-description: "Open datasets for [field of research]"
+description: "Open datasets for scientific research"
 url: "https://username.github.io"
 baseurl: ""
 
@@ -10,7 +10,7 @@ locale: "en-US"
 
 # Theme
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-minimal_mistakes_skin: "default"  # or "air", "mint", "plum" for lighter academic feel
+minimal_mistakes_skin: "default"
 
 plugins:
   - jekyll-paginate
@@ -24,26 +24,21 @@ markdown: kramdown
 paginate: 5
 paginate_path: "/page:num/"
 
-# Collections
+# Collections - THIS IS CRITICAL
 collections:
-  pages:
-    output: true
-    permalink: /:path/
   datasets:
     output: true
-    permalink: /datasets/:name/
-  publications:
-    output: true
-    permalink: /publications/:name/
+    permalink: /:collection/:path/
 
+# Include _pages folder
 include:
   - _pages
 
-# Author info
+# Author info - THIS CONTROLS SIDEBAR
 author:
-  name: "Pamela Vinueza"
-  avatar: "/images/espoch.jpeg"  # Add a profile photo to /images/
-  bio: "Researcher in [field], open data advocate"
+  name: "Her Full Name"
+  avatar: "/assets/images/espoch.jpeg"  # MUST be in assets/images/
+  bio: "Researcher in [field]. Open data advocate."
   location: "Institution, Country"
   links:
     - label: "Email"
@@ -55,32 +50,31 @@ author:
     - label: "ORCID"
       icon: "fab fa-orcid"
       url: "https://orcid.org/0000-0000-0000-0000"
-    - label: "Institution"
-      icon: "fas fa-university"
-      url: "https://institution.edu"
 
-# Default layouts
+# Defaults - THIS CONTROLS LAYOUTS
 defaults:
+  # Posts and pages show author sidebar
   - scope:
       path: ""
       type: posts
     values:
       layout: single
       author_profile: true
-      read_time: true
+      read_time: false
       comments: false
-      share: true
-      related: true
+      share: false
+      related: false
+  # Pages
   - scope:
-      path: ""
-      type: datasets
+      path: "_pages"
+      type: pages
     values:
       layout: single
       author_profile: true
-      toc: true  # Table of contents for dataset docs
+  # Datasets collection
   - scope:
       path: ""
-      type: publications
+      type: datasets
     values:
       layout: single
       author_profile: true
@@ -93,11 +87,3 @@ exclude:
   - Gemfile.lock
   - node_modules/
   - vendor/
-  - _data/raw/  # If storing raw data processing files
-
-# SEO
-social:
-  type: Person
-  name: Her Name
-  links:
-    - "https://github.com/username"
