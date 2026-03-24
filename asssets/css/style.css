@@ -1,0 +1,60 @@
+---
+---
+
+@import "minima";
+
+.dataset-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  
+  th {
+    background: #f5f5f5;
+    border-bottom: 2px solid #333;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  td {
+    border-bottom: 1px solid #ddd;
+    padding: 12px;
+    vertical-align: top;
+  }
+  
+  tr:hover {
+    background: #fafafa;
+  }
+  
+  small {
+    color: #666;
+    display: block;
+    margin-top: 4px;
+  }
+}
+
+.btn {
+  display: inline-block;
+  padding: 6px 16px;
+  background: #0366d6;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 14px;
+  
+  &:hover {
+    background: #0256c7;
+  }
+}
+
+.btn-external {
+  background: #6f42c1;
+  
+  &:hover {
+    background: #5a32a3;
+  }
+}
+
+.btn-small {
+  padding: 4px 12px;
+  font-size: 12px;
+}
