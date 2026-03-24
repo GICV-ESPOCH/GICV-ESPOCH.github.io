@@ -1,5 +1,5 @@
 title: "Fancy project name"
-name: "Pamela Vinueza"
+name: "GICV-ESPOCH"
 email: "pvinuezavet@gmail.com"
 description: "Open datasets for research"
 url: "https://GICV-ESPOCH.github.io"
@@ -44,9 +44,9 @@ include:
 
 # Author info (improved)
 author:
-  name: "Pamela Vinueza"
+  name: "GICV-ESPOCH"
   avatar: "/assets/images/espoch.jpeg"
-  bio: "Veterinary"
+  bio: "Super nice research project"
   location: "Ecuador"
   links:
     - label: "Email"
@@ -54,7 +54,7 @@ author:
       url: "mailto:pvinuezavet@gmail.com"  # Added mailto:
     - label: "ResearchGate"
       icon: "fab fa-researchgate"
-      url: "https://www.researchgate.net/profile/Marlon-Calispa"
+      url: "https://www.researchgate.net/profile/Pamela-Vinueza-Veloz"
     - label: "Google Scholar"
       icon: "fas fa-graduation-cap"
       url: "https://scholar.google.com/citations?user=7LHTKQgAAAAJ&hl=es"  # Add if you have one
