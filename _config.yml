@@ -1,20 +1,103 @@
-title: Research Data Hub
-description: Open datasets for scientific research
-theme: minima
+title: "Research Data Hub"
+name: "Her Name"
+description: "Open datasets for [field of research]"
+url: "https://username.github.io"
+baseurl: ""
 
-author:
-  name: PV
-  email: pamela.vinueza@espoch.edu.ec
+# SEO
+lang: "en-US"
+locale: "en-US"
 
-# Navigation links
-header_pages:
-  - index.md
-  - datasets.md
-  - guide.md
-  - about.md
+# Theme
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+minimal_mistakes_skin: "default"  # or "air", "mint", "plum" for lighter academic feel
 
-# Collections for datasets
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-include-cache
+
+# Site settings
+markdown: kramdown
+paginate: 5
+paginate_path: "/page:num/"
+
+# Collections
 collections:
+  pages:
+    output: true
+    permalink: /:path/
   datasets:
     output: true
     permalink: /datasets/:name/
+  publications:
+    output: true
+    permalink: /publications/:name/
+
+include:
+  - _pages
+
+# Author info
+author:
+  name: "Pamela Vinueza"
+  avatar: "/images/espoch.jpg"  # Add a profile photo to /images/
+  bio: "Researcher in [field], open data advocate"
+  location: "Institution, Country"
+  links:
+    - label: "Email"
+      icon: "fas fa-envelope"
+      url: "mailto:her.email@institution.edu"
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/username"
+    - label: "ORCID"
+      icon: "fab fa-orcid"
+      url: "https://orcid.org/0000-0000-0000-0000"
+    - label: "Institution"
+      icon: "fas fa-university"
+      url: "https://institution.edu"
+
+# Default layouts
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: false
+      share: true
+      related: true
+  - scope:
+      path: ""
+      type: datasets
+    values:
+      layout: single
+      author_profile: true
+      toc: true  # Table of contents for dataset docs
+  - scope:
+      path: ""
+      type: publications
+    values:
+      layout: single
+      author_profile: true
+
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+  - _data/raw/  # If storing raw data processing files
+
+# SEO
+social:
+  type: Person
+  name: Her Name
+  links:
+    - "https://github.com/username"
