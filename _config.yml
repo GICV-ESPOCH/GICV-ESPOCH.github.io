@@ -1,7 +1,21 @@
 title: "GICV-ESPOCH"
 name: "GICV-ESPOCH"
-...
+email: "pamela.vinueza@espoch.edu.ec"
+description: "One Health, SOPs, epidemiology and veterinary research"
+url: "https://gicv-espoch.github.io"
+baseurl: ""
 
+# 👇 ESTO ES LO QUE TE FALTABA
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+
+# 👇 ESTO TAMBIÉN ES CLAVE
+plugins:
+  - jekyll-include-cache
+
+include:
+  - _pages
+
+# Author info
 author:
   name: "GICV–ESPOCH"
   avatar: "/assets/images/espoch.jpeg"
@@ -19,6 +33,11 @@ author:
       icon: "fas fa-graduation-cap"
       url: "https://scholar.google.com/citations?user=eZFh3SwAAAAJ&hl=es"
     - label: "ResearchGate"
+      icon: "fab fa-researchgate"
+      url: "https://www.researchgate.net/profile/Pamela-Vinueza-Veloz"
+    - label: "Instagram"
+      icon: "fab fa-instagram"
+      url: "https://www.instagram.com/grupo_gicv_espoch"
       icon: "fab fa-researchgate"
       url: "https://www.researchgate.net/profile/Pamela-Vinueza-Veloz"
     - label: "Instagram"
