@@ -1,105 +1,26 @@
 title: "GICV-ESPOCH"
 name: "GICV-ESPOCH"
-email: "pamela.vinueza@espoch.edu.ec"
-description: "Open datasets for research"
-url: "https://GICV-ESPOCH.github.io"
-baseurl: ""
+...
 
-# SEO improvements
-lang: "en-US"
-locale: "en-US"
-
-# Theme
-remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-
-# Minimal Mistakes settings
-minimal_mistakes_skin: "default" # or "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
-
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-include-cache
-
-# Site settings
-markdown: kramdown
-paginate: 5
-paginate_path: "/page:num/"
-
-# Collections
-collections:
-  pages:
-    output: true
-    permalink: /:path/
-  publications:
-    output: true
-    permalink: /publications/:name/
-  research:
-    output: true
-    permalink: /research/:name/
-
-include:
-  - _pages
-
-# Author info (improved)
 author:
-  name: "GICV-ESPOCH"
+  name: "GICV–ESPOCH"
   avatar: "/assets/images/espoch.jpeg"
-  bio: "Contacto"
-  location: "Ecuador"
+  bio: "Grupo de Investigación en Ciencias Veterinarias"
+  location: "Riobamba, Ecuador"
+  email: "pamela.vinueza@espoch.edu.ec"
   links:
+    - label: "ESPOCH"
+      icon: "fas fa-university"
+      url: "https://www.espoch.edu.ec"
     - label: "Email"
       icon: "fas fa-envelope"
-      url: "mailto:pamela.vinueza@espoch.edu.ec"  # Added mailto:
+      url: "mailto:pamela.vinueza@espoch.edu.ec"
+    - label: "Google Scholar"
+      icon: "fas fa-graduation-cap"
+      url: "https://scholar.google.com/citations?user=eZFh3SwAAAAJ&hl=es"
     - label: "ResearchGate"
       icon: "fab fa-researchgate"
       url: "https://www.researchgate.net/profile/Pamela-Vinueza-Veloz"
-    - label: "Google Scholar"
-      icon: "fas fa-graduation-cap"
-      url: "https://scholar.google.com/citations?user=eZFh3SwAAAAJ&hl=es"  # Add if you have one
     - label: "Instagram"
       icon: "fab fa-instagram"
-      url: "https://www.instagram.com/grupo_gicv_espoch?igsh=MW1lN2I1dnU3czFiNQ=="
-
-# Default front matter
-defaults:
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: false
-      share: true
-      related: true
-  - scope:
-      path: ""
-      type: publications
-    values:
-      layout: single
-      author_profile: true
-  - scope:
-      path: ""
-      type: research
-    values:
-      layout: single
-      author_profile: true
-
-# Exclude from processing
-exclude:
-  - .sass-cache/
-  - .jekyll-cache/
-  - gemfiles/
-  - Gemfile
-  - Gemfile.lock
-  - node_modules/
-  - vendor/
-
-# SEO and social
-social:
-  type: Person
-  name: Marlon Calispa
-  links:
-    - "https://www.researchgate.net/profile/Pamela-Vinueza"
+      url: "https://www.instagram.com/grupo_gicv_espoch"
