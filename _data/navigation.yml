@@ -1,8 +1,8 @@
 main:
   - title: "Home"
     url: /
-  - title: "About"
-    url: /about/
+  - title: "Partners"
+    url: /partners/
   #- title: "Research"
   #  url: /research/
   #  description: "Current projects and methodologies"
@@ -25,4 +25,4 @@ footer:
       - title: "Email"
         url: "mailto:pvinuezavet@gmail.com"
       - title: "CV/Resume"
-        url: "/assets/cv/marlon-calispa-cv.pdf"  # Add when you have a CV file
+        url: "/assets/cv/"  # Add when you have a CV file
